@@ -1,0 +1,16 @@
+一、搜索API
+https://c.y.qq.com/soso/fcgi-bin/client_search_cp?p=1&n=10&w=李荣浩
+参数：
+p：页数，从1开始
+n：每一页显示的条数
+w：搜索关键字
+
+二、获取链接
+https://u.y.qq.com/cgi-bin/musicu.fcg?data={"req_0":{"module":"vkey.GetVkeyServer","method":"CgiGetVkey","param":{"guid":"5900616959","songmid":["002S5aI53We5m0"],"songtype":[0],"uin":"27281729","loginflag":1,"platform":"20"}},"comm":{"uin":"27281729","format":"json","ct":24,"cv":0}}
+
+三、在返回的数据中获取purl
+
+四、拼接播放链接
+http://ws.stream.qqmusic.qq.com/  +   purl
+或
+http://isure.stream.qqmusic.qq.com/  +  purl
